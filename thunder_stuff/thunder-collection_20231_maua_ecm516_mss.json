@@ -1,0 +1,111 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "20231_maua_ecm516_mss",
+    "dateExported": "2023-08-26T12:29:44.093Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "6a8fcff8-37fe-4667-b824-2347232d1165",
+            "name": "lembretes",
+            "containerId": "",
+            "created": "2023-08-26T11:26:16.647Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "e2721542-a7f7-48e2-bb9a-f2404b12b908",
+            "name": "observacoes",
+            "containerId": "",
+            "created": "2023-08-26T11:26:16.648Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "a25870b3-8b0f-4997-be66-773502f0db1c",
+            "name": "consulta",
+            "containerId": "",
+            "created": "2023-08-26T11:27:04.033Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "39da9601-40c4-4228-ae35-278aa4d12c13",
+            "colId": "a7b05aa9-e9bd-46a5-a19a-b175e8c4a37a",
+            "containerId": "6a8fcff8-37fe-4667-b824-2347232d1165",
+            "name": "Obter lembretes",
+            "url": "localhost:4000/lembretes",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-08-26T11:26:16.647Z",
+            "modified": "2023-08-26T11:30:12.954Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7bfc33e2-cf89-4ba5-b150-3a3042c6f4fb",
+            "colId": "a7b05aa9-e9bd-46a5-a19a-b175e8c4a37a",
+            "containerId": "6a8fcff8-37fe-4667-b824-2347232d1165",
+            "name": "Salvar lembrete",
+            "url": "localhost:4000/lembretes",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-08-26T11:26:16.649Z",
+            "modified": "2023-08-26T11:26:16.649Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"texto\": \"{{#string}}\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0f152166-60f9-4329-b17a-08ae18af8372",
+            "colId": "a7b05aa9-e9bd-46a5-a19a-b175e8c4a37a",
+            "containerId": "e2721542-a7f7-48e2-bb9a-f2404b12b908",
+            "name": "Obter observacoes",
+            "url": "localhost:5000/lembretes/1/observacoes",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-08-26T11:26:16.650Z",
+            "modified": "2023-08-26T11:26:16.650Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e9ffecfd-ce8f-422d-b18c-1338140fb259",
+            "colId": "a7b05aa9-e9bd-46a5-a19a-b175e8c4a37a",
+            "containerId": "e2721542-a7f7-48e2-bb9a-f2404b12b908",
+            "name": "Salvar Observação",
+            "url": "localhost:5000/lembretes/1/observacoes",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-08-26T11:26:16.651Z",
+            "modified": "2023-08-26T11:26:16.651Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"texto\": \"{{#string}}\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "88789f19-3048-4866-9797-445720578423",
+            "colId": "a7b05aa9-e9bd-46a5-a19a-b175e8c4a37a",
+            "containerId": "a25870b3-8b0f-4997-be66-773502f0db1c",
+            "name": "Obter base consolidada",
+            "url": "localhost:6000/lembretes",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-08-26T11:27:17.849Z",
+            "modified": "2023-08-26T11:27:33.189Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
